@@ -1,0 +1,222 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Timothy Leung} \\ \vspace{1pt}
+    \small (647)580-7042 $|$ \href{mailto:timothyrleung@gmail.com}{\underline{timothyrleung@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/timothy-leung-002831232/}{\underline{https://www.linkedin.com/in/timothy-leung-002831232/}} $|$
+    \href{https://github.com/leungt30}{\underline{https://github.com/leungt30}} $|$
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {McMaster University}{Hamilton, ON}
+      {Honours Bachelor of Applied Science in Computer Science, Minor in Mathematics}{Sept. 2021 -- Apr. 2025}
+    \resumeSubheading
+      {Pierre Elliott Trudeau High School}{Markham, ON}
+      {OSSD}{Sept. 2017 -- June 2021}
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Key Skills}
+      \resumeItemListStart
+        \resumeItem{\textbf{Experience with Python, JS, Java, C, Haskell, Elm, HTML/CSS, REACT, SQL, GitHub}}
+        \resumeItem{\textbf{Teaching Experience:} Timothy enjoys learning and sharing his knowledge with others. He has taught mathematics at summer camps and calculus to year 1 students}
+      \resumeItemListEnd
+      
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Summer Camp Instructor}{Markham, ON}
+      {Agape Summer Camp}{July -- Aug, 2022}
+      \resumeItemListStart
+        \resumeItem{Taught mathematics to children age 6-8}
+        \resumeItem{Created 4 weeks of day schedules with children's activities}
+        \resumeItem{Responsible for curating a fun learning environment}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {Summer Camp Instructor}{Richmond Hill, ON}
+      {Richmond Hill Free Methodist Church}{July -- Aug, 2021}
+      \resumeItemListStart
+        \resumeItem{Planned activities to enrich camper's development}
+        \resumeItem{Exercised critical thinking by implementing versions of planned games in a virtual setting in the event of online-only campers}
+        \resumeItem{Practiced collaboration by working with other coordinators to create a common theme which our activities would be based upon}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Information Officer}{Markham, ON}
+      {Elections Canada}{Oct. 2019 -- Oct. 2019}
+      \resumeItemListStart
+        \resumeItem{Communicated with voters to ensure quick and efficient voting process}
+        \resumeItem{Verified voter IDs}
+        \resumeItem{Demonstrated problem solving by overcoming any obstacles preventing physical disabled voters from voting}
+    \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+%-----------Academics-----------
+\section{Academics}
+    \resumeItemListStart
+        \resumeItem{\textbf{A+ in:} Introduction to Computational Thinking, Introduction to Programming, Linear Algebra 1, Engineering Mathematics I, Discrete Math for Comp Sci, Developmental Basics, Engineering Mathematics II, Philosophy, Data Structures and Algorithms, Logical Reasoning, Intro to Software Development, Intro to Sustainability. }
+        \resumeItem{\textbf{A in:} Computer Architecture, Intro to Software Using Web Programming}
+        
+      \resumeItemListEnd
+
+
+%-----------Awards-----------
+\section{Awards}
+    \resumeItemListStart
+        \resumeItem{\textbf{2021, \textit{Engineering Award of Excellence}, McMaster University:} Awarded to students entering Level 1 in the top 10\% of their faculty}
+        \resumeItem{\textbf{2021, \textit{Honour Roll Medalist}, Pierre Elliot Trudeau High School}: Awarded to students with an average over 90\%}
+      \resumeItemListEnd
+      
+%-----------Interests-----------
+% \section{Interests}
+%     \resumeItemListStart
+%         \resumeItem{Sample Text}
+%       \resumeItemListEnd
+    
+
+%-----------Interests-----------
+\section{Projects}
+    \resumeItemListStart
+        \resumeItem{\textbf{Automated Valorant Rank Checker:} Created to verify a participant's rank before joining a tournament}
+        \resumeItem{\textbf{Voice Assistant:} created a virtual assistant that used voice recognition to detect user inputs}
+        \resumeItem{\textbf{UI/UX Websites:} Created multiple modern looking websites that adjust to the users device. }
+      \resumeItemListEnd
+    
+
+
+% %
+% %-----------PROGRAMMING SKILLS-----------
+% \section{Technical Skills}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%      \textbf{Languages}{: Python, Haskell, Elm, C/C++, SQL (MySQL), HTML/CSS} \\
+%      \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+%      \textbf{Developer Tools}{: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse} \\
+%      \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+%     }}
+%  \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
